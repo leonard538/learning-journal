@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    padding: 0 1.6em;
+}
+
+.main-content {
+    min-height: 70vh;
+}
+
+.footer p {
+    background-color: #202020;
+    margin: 0;
+    text-align: center;
+}
+
+/* Saving Blogs */
+.add-blog {
+    background-color: #202020;
+    color: #D7D7D7;
+    width: 90vw;
+    margin: 1em auto;
+    position: relative;
+    border-radius: 8px;
+}
+.add-blog #close {
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+}
+.add-blog form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1em;
+}
+.add-blog form input,
+.add-blog form textarea {
+    padding: 0.313em;
+    border-radius: 4px;
+} 
+.add-blog form label {
+    font-size: 0.875rem;
+    margin: 0.625em 0 0.313em;
+}
+.add-blog form input { height: 2em;}
+.add-blog form textarea {
+    resize: none;
+    height: 21.875em;
+}
+
+.add-blog form button {
+    padding: 0.875em;
+    margin: 1em 0 0.5em;
+    border-radius: 4px;
+    background-color: #047857;
+    border: none;
+    color: #D7D7D7;
+    font-weight: 600;
+    font-size: 1em;
+}
+    .add-blog form button:hover,
+    .add-blog form button:focus {
+        background-color: #064E3B;
+    }
+
+@media (max-width: 480px) {
+    .header {
+
+    }
+}

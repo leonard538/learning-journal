@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header class="header" id="header">
-        <span>My Learning Journal</span>
+        <span><i class="fa-solid fa-comment" id="developer"></i>My Learning Journal</span>
         <nav class="nav">
-           <span>HOME</span>
+            <span>HOME</span>
             <span>ABOUT ME</span> 
         </nav>
     </header>
@@ -22,11 +29,32 @@
         <section class="blogs-container" id="blogs-container">
             <!-- BLOGS TO BE PLACE HERE -->
         </section>
+        
+        <div class="add-blog" id="add-blog">
+            <i class="fa-solid fa-xmark" id="close"></i>
+            <form>
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title">
+                
+                <label for="content">Content</label>
+                <textarea name="content" id="content"></textarea>
+
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+
+                <label for="image">Image</label>
+                <input type="file" name="image" id="image">
+
+                <button class="btn save-btn" id="save-btn">Save</button>
+            </form>
+        </div>
     </main>
 
     <footer class="footer" id="footer">
-        <p>My Learning Journal</p>
-        <p>Copyright &copy2026</p>
+        <p style="color: #D7D7D7;">My Learning Journal</p>
+        <p style="color: #ECECEC;">Copyright &copy2026</p>
     </footer>
+
+    <script src="index.js" type="module"></script>
 </body>
 </html>
