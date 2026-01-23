@@ -12,6 +12,15 @@ a {
     color: #202020;
 }
 
+/* HEADINGS */
+h2 {
+    margin: 0;
+}
+span {
+    font-size: 0.75rem;
+    margin: 1em 0 0.313em;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -22,12 +31,6 @@ a {
 
 .main-content {
     min-height: 70vh;
-}
-
-.footer p {
-    background-color: #202020;
-    margin: 0;
-    text-align: center;
 }
 
 /* NAVIGATION */
@@ -122,13 +125,43 @@ section.featured-blog div.desc h1,
 section.featured-blog div.desc p {
     margin: 0 0 0.313em;
 }
-section.featured-blog div.desc span {
+
+/* BLOGS */
+main section.blogs-container {
+    margin: 2em 1.25em;
+    color: #202020;
+    line-height: 1.5;
+}
+section.blogs-container div.blogs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.375em;
+}
+section.blogs-container div.blogs p.blog-shortdesc {
+    font-size: 0.875rem;
+    margin: 0.25em 0;
+    color: #505050;
+}
+section.blogs-container div.blogs img.blog-img {
+    width: 100%;
+    max-width: 450px;
+}
+
+/* FOOTER */
+.footer {
+    height: 15vh;
+    background-color: #202020;
     font-size: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer p {
+    margin: 0.25em 0;
+    text-align: center;
 }
 
 
 @media (max-width: 480px) {
-    .header {
 
-    }
 }
