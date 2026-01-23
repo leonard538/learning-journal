@@ -7,6 +7,10 @@ html, body {
 button, a {
     cursor: pointer;
 }
+a {
+    text-decoration: none;
+    color: #202020;
+}
 
 .header {
     display: flex;
@@ -26,7 +30,23 @@ button, a {
     text-align: center;
 }
 
-/* Saving Blogs */
+/* NAVIGATION */
+header {
+    font-weight: bold;
+}
+header span, header .nav {
+    display: flex;
+    align-items: center;
+}
+header span i {
+    font-size: 1.375em;
+}
+header .nav {
+    gap: 3em;
+    font-size: 0.75rem;
+}
+
+/* Saving Blogs | Developer Mode */
 .add-blog {
     background-color: #202020;
     color: #D7D7D7;
@@ -75,6 +95,37 @@ button, a {
     .add-blog form button:focus {
         background-color: #064E3B;
     }
+
+/* FEATURED POST */
+main section.featured-blog {
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    position: relative;
+}
+
+section.featured-blog img {
+    width: 100%;
+}
+
+section.featured-blog div.desc {
+    position: absolute;
+    bottom: 0;
+    padding: 2em;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.126));
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.307);
+    color: #D7D7D7;
+    line-height: 1.5;
+}
+section.featured-blog div.desc h1, 
+section.featured-blog div.desc p {
+    margin: 0 0 0.313em;
+}
+section.featured-blog div.desc span {
+    font-size: 0.75rem;
+}
+
 
 @media (max-width: 480px) {
     .header {
