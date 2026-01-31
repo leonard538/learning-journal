@@ -12,13 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<div>
+<body>
     <header class="header" id="header">
-        <span><i class="fa-solid fa-comment" id="developer"></i>My Learning Journal</span>
-        <nav class="nav">
-            <a href="#home">HOME</a>
-            <a href="#about-me" id="about-me-btn">ABOUT ME</a> 
-        </nav>
+        <div class="head-container" id="head-container">
+            <span><i class="fa-solid fa-comment" id="developer"></i>My Learning Journal</span>
+            <nav class="nav">
+                <a href="#home">HOME</a>
+                <a href="aboutme.html" id="about-me-btn">ABOUT ME</a> 
+            </nav>
+        </div>
     </header>
 
     <main class="main-content" id="home">
@@ -60,45 +62,10 @@
         </section>
     </main>
 
-    <!-- About Me Page -->
-    <section class="about-me" id="about-me">
-        <div class="my-info" id="my-info">
-            <div class="img-container">
-                <img src="images/Me.jpg" alt="">
-            </div>
-            <div class="my-intro" id="my-intro">
-                <h1>Hi there! My name is Leonard and welcome to my learning journal.</h1>
-                <p>After several months of learning in the Full Stack Developer Career Path, 
-                    I've made the big jump over to the Bootcamp to get expert code reviews of my 
-                    Solo Projects projects and meet like-minded peers.
-                </p>
-            </div>
-        </div>
-
-        <div class="more-info" id="more-info">
-            <h3>How I stay committed to learning</h3>
-            <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, 
-                then try to create simple projects using what I learned or work new techniques into existing 
-                projects.
-            </p>
-            <p>While that was fun, I felt like it would be helpful to share what I was learning and most things 
-                about my journey with the world.
-            </p>
-            <h3>How I got started</h3>
-            <p>I started simple and gradually grew my learning journal site. I would take notes about what I 
-                was learning. After each learning session, I'd use my notes to not only reflect on what I learned 
-                but also write short summaries of what I learned using my own words.
-            </p>
-            <p>That helped me grow what I was learning, and I realized that posting my learning summaries was also 
-                helping others learn and stay motivated.
-            </p>
-        </div>
-    </section>
-    
     <footer class="footer" id="footer">
         <p style="color: #ECECEC; font-weight: bold;">My Learning Journal</p>
         <p style="color: #D7D7D7;">Copyright &copy2026</p>
-    </footer>
+    </footer>    
 
     <script src="index.js" type="module"></script>
 </body>
