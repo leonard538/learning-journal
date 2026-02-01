@@ -23,10 +23,12 @@ function getInitialCount() {
 }
 
 function renderBlogs(blogs) {
+    console.log(blogs)
     const blogContainer = document.getElementById('blogs-container');
     
     blogs.forEach(blog => {
         const blogDiv = document.createElement('a');
+        blogDiv.href = ''
         blogDiv.classList.add('blogs');
         blogDiv.innerHTML = `
             <img src="images/${blog.image}" alt="" class="blog-img">
@@ -64,6 +66,10 @@ function renderBlogPreview(data) {
     updateViewMoreButton();
 }
 
+// Enter Blog
+document.getElementById('featured-blog').addEventListener('click', () => {
+    
+})
 
 // Listening to Developer Mode
 document.getElementById('developer').addEventListener('click', (e) => {
