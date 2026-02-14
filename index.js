@@ -75,15 +75,13 @@ document.getElementById('featured-blog').addEventListener('click', () => {
 document.getElementById('developer').addEventListener('click', (e) => {
     if (e.detail === 3) {
         document.getElementById('add-blog').style.display = 'block'
-        document.querySelector('body').style.backgroundColor = '#505050'
-        document.getElementById('header').style.backgroundColor = '#505050'
+        document.getElementById('dev-overlay').style.display = 'block'
     }
 })
 
 document.getElementById('dev-close').addEventListener('click', e => {
     document.getElementById('add-blog').style.display = 'none'
-    document.querySelector('body').style.background = 'none'
-    document.getElementById('header').style.background = 'white'
+    document.getElementById('dev-overlay').style.display = 'none'
 })
 
 
